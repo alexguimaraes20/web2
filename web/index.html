@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src = "js/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <form>
+            <label id="labelNome" for="nome"> Nome </label>
+            <input class ="form-control" type="text" id="nome" required />
+            
+            <button id="salvar" class="btn btn-primary" type="submit">Salvar</button>
+        </form>
+        
+        <script>
+            
+            $(document).ready(
+                    function(){
+                        $('#labelNome').on('click',
+                        function(){
+                            $(this).css('background-color','#00FF00');
+                            $('#nome').val('teste');
+                            $('#salvar').hide(500);
+                        }
+                        );
+                    }
+            );
+            
+        </script>
+        
+    </body>
+</html>
